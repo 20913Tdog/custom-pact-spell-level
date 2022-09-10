@@ -1,0 +1,24 @@
+{
+	"id":"custom-pact-spell-level",
+	"title": "Custom Pact Spell Level",
+	"description": "A simple module that allows to set the pact spell level of your warlocks",
+	"authors": [
+		{
+			"name":"Glingol"
+		}
+	],
+	"version": "1.0.0",
+	"compatibility": {
+		"minimum": "10",
+		"verified": "10"
+	},
+	"scripts": [
+		"scripts/pactLevel.js"
+	]
+	    "minimumCoreVersion": "10.278",
+    "compatibleCoreVersion": "10.285",
+    "url": "https://github.com/20913Tdog/custom-pact-spell-level",
+    "manifest": "https://raw.githubusercontent.com/20913Tdog/custom-pact-spell-level/1.0.0/module.json",
+    "download": "https://github.com/20913Tdog/custom-pact-spell-level/archive/refs/tags/1.0.0.zip",
+    "readme": "https://github.com/20913Tdog/custom-pact-spell-level/blob/main/README.md",
+}
