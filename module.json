@@ -1,41 +1,39 @@
 {
 	"id": "custom-pact-spell-level",
-	"name": "custom-pact-spell-level",
 	"title": "Custom Pact Spell Level",
 	"description": "A simple module that allows to set the pact spell level of your warlocks",
 	"version": "1.0.0",
-	"library": "false",
-	"manifestPlusVersion": "1.0.0",
-    "minimumCoreVersion": "10",
-    "compatibleCoreVersion": "10",
 	"compatibility": {
-		"minimum": "10.278",
-		"verified": "10.285"
+		"minimum": 10,
+		"verified": 10.285,
+		"maximum": 10
 	},
 	"authors": [
 		{
-			"name":"Glingol"
+			"name":"Glingol",
+			"discord": "glingol#1175"
 		}
 	],
 	"dependencies": [
-        {
-            "name": "dnd5e",
-            "type": "system"
-        }
-    ],
-    "system": [
-        "dnd5e"
-    ],
-	"packs": [],
-    "conflicts": [],
-	"esmodules": [],
+	{
+		"name": "dnd5e",
+		"type": "system"
+	}],
+	"relationships": {
+    "systems": [{
+		"id": "dnd5e",
+		"manifest": "https://github.com/foundryvtt/dnd5e/releases/download/release-2.0.2/system.json",
+		"compatibility": {
+			"minimum": "2.0.2",
+			"verified": "2.0.2"
+			}
+		}]
+	},
 	"scripts": [
 		"/scripts/pactLevel.js"
 	],
-    "styles": [],
-	"languages": [],
 	"readme": "https://github.com/20913Tdog/custom-pact-spell-level/blob/main/README.md",
-    "url": "https://github.com/20913Tdog/custom-pact-spell-level",
-    "manifest": "https://github.com/20913Tdog/custom-pact-spell-level/releases/download/1.0.7/module.json",
-    "download": "https://github.com/20913Tdog/custom-pact-spell-level/releases/download/1.0.7/module.zip",
+	"url": "https://github.com/20913Tdog/custom-pact-spell-level",
+	"manifest": "https://github.com/20913Tdog/custom-pact-spell-level/releases/latest/download/module.json",
+	"download": "https://github.com/20913Tdog/custom-pact-spell-level/releases/download/1.0.8/module.zip"
 }
